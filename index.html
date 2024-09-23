@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo Visualizer</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/logo.png" width="60px" height="60px">
+        Sorting Algo Visualizer
+    </div>
+    <div class="main">
+        <div class="board">
+            <div class="box"></div>
+        </div>
+        <div class="controls">
+            <div class="controls-header">
+                Controls
+            </div>
+            <div >
+                <label for="count">Number of elements</label>
+                <input id="count" type="range" name="count" min="5" max="50" color = "red"/>
+            </div>
+            <div>
+                <button class="btn-lg" id="generate-elements">Generate elements</button>
+            </div>
+            <div>
+                <label for="delay">Delay in milliseconds</label>
+                <input type="range" name="delay" id="delay" min="5" max="500" />
+            </div>
+            <div class="btn-group">
+                <button id="bubble">Bubble sort</button>
+                <button id="insertion">Insertion sort</button>
+                <button id="selection">Selection sort</button>
+                <button id="merge">Merge Sort</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
